@@ -1,108 +1,82 @@
 <!DOCTYPE html>
-
-<html>
-    <!-- For Sidebar -->
-  <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dominic Soricelli</title>
+  <meta name="description" content="Dominic Soricelli — IT, networking, and home-lab projects.">
+  <link rel="icon" href="images/keybird.gif">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="images/keybird.gif" alt="">Dominic</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="goals.html">Goals</a></li>
+          <li><a href="Accomplishments.html">Accomplishments</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://dsoricelli.github.io/mywebsite/index.html">Home</a>
-  <a href="https://dsoricelli.github.io/mywebsite/goals.html">Goals</a>
-  <a href="https://dsoricelli.github.io/mywebsite/Accomplishments.html">Accomplishments</a>
-  <a href="https://dsoricelli.github.io/mywebsite/Projects.html">Projects</a>
-  <a href="#">Coming Soon!</a>
-</div>
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-avatar"><img src="images/keybird.gif" alt="Pixel-art bird"></div>
+        <div>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Dominic Soricelli</h1>
+          <p class="lead">IT and networking enthusiast with A+ and Security+ certifications. I like building tidy networks, tinkering with home-lab hardware, and learning something new every month.</p>
+        </div>
+      </section>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      <div class="grid">
+        <article class="card">
+          <h2>About me</h2>
+          <p>I'm an avid hockey fan (Go Rangers!), I play guitar, and I have a passion for technology.</p>
+        </article>
+        <article class="card">
+          <h2>What I'm working on</h2>
+          <p>Migrating my Plex media server from my PC to dedicated hardware, and building HTML/CSS experience by working on this site.</p>
+          <ul class="tags"><li>Plex</li><li>Home lab</li><li>HTML &amp; CSS</li></ul>
+        </article>
+      </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+      <section class="section">
+        <p class="section-label">Explore</p>
+        <div class="grid">
+          <a class="card" href="Projects.html" style="text-decoration:none">
+            <h3>Projects &rarr;</h3>
+            <p>Before-and-after photos from network rack rebuilds.</p>
+          </a>
+          <a class="card" href="Accomplishments.html" style="text-decoration:none">
+            <h3>Accomplishments &rarr;</h3>
+            <p>Certifications and things I've built.</p>
+          </a>
+          <a class="card" href="goals.html" style="text-decoration:none">
+            <h3>Goals &rarr;</h3>
+            <p>What I'm working toward next.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span data-year>2026</span> Dominic Soricelli</span>
+      <a href="https://github.com/dsoricelli">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
-<!-- End Sidebar -->
-    
-</body>
-    <body style="background-color:#F75D59;" align = "center">
-          <!-- For Youtube -->    
-        <iframe width="1" height="1" src="https://www.youtube.com/embed/mEpsyvKCV3k?si=3O1L-UxzBtKHnFR6&amp&autoplay=1;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         <!-- End Youtube --> 
-        <header> 
-            <h1>Hello, I'm Dominic</h1>
-        </header>
-        
-<h1></h1>
-            <img src="Keybird.gif" alt="Keybird.gif" width="300" height="150">
-
-
-   
-        <h2>About me</h2>
-        <p>
-            I am an avid Hockey fan (Go Rangers!), I play guitar, and have a passion for technology.
-        </p>
-        
-        <h2>What I'm working on</h2>
-        <p>
-            I'm working on migrating my Plex media server from my PC to dedicated hardware and getting some HTML experience by working on this site.
-        </p>
-        
-        
-    </body>
-
-    
-    <footer></footer>
 </html>

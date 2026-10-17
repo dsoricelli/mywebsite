@@ -1,87 +1,72 @@
-<html>
-       <!-- For Sidebar -->
-       
-  <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goals · Dominic Soricelli</title>
+  <meta name="description" content="What Dominic is working toward next.">
+  <link rel="icon" href="images/keybird.gif">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="images/keybird.gif" alt="">Dominic</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="goals.html" aria-current="page">Goals</a></li>
+          <li><a href="Accomplishments.html">Accomplishments</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://dsoricelli.github.io/mywebsite/index.html">Home</a>
-  <a href="https://dsoricelli.github.io/mywebsite/goals.html">Goals</a>
-  <a href="https://dsoricelli.github.io/mywebsite/Accomplishments.html">Accomplishments</a>
-  <a href="https://dsoricelli.github.io/mywebsite/Projects.html">Projects</a>
-  <a href="#">Coming Soon!</a>
-</div>
+  <main>
+    <div class="container">
+      <header class="page-title">
+        <p class="eyebrow">Up next</p>
+        <h1>Goals</h1>
+        <p class="lead">Things I'm actively working toward.</p>
+      </header>
+      <ul class="checklist">
+        <li>
+          <span class="icon" aria-hidden="true">&#127891;</span>
+          <div>
+            <strong>Earn the CompTIA Network+ certification</strong>
+            <span class="detail">Building on A+ and Security+ to round out the CompTIA trifecta.</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">&#128187;</span>
+          <div>
+            <strong>Learn PowerShell</strong>
+            <span class="detail">Working through <i>Learn PowerShell in a Month of Lunches</i>.</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true">&#128214;</span>
+          <div>
+            <strong>Read <i>The Lord of the Rings</i> series</strong>
+            <span class="detail">Because not everything has to be about IT.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span data-year>2026</span> Dominic Soricelli</span>
+      <a href="https://github.com/dsoricelli">GitHub</a>
+    </div>
+  </footer>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+  <script src="script.js"></script>
 </body>
-
-<!-- End Sidebar -->
-    <h1 align = "center">
-        Goals
-    </h1>
-    <body align = "center">
-        <p>
-            - Obtain Network Plus Certification<br>
-            - Learn Powershell by reading <i>Learn Powershell in a Month of Lunches</i><br>
-            - Read <i>The Lord of the Rings</i> series<br>
-        </p>
-    </body>
 </html>

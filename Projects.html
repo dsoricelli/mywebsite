@@ -1,86 +1,70 @@
-<html>
-               <!-- For Sidebar -->
-  <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Dominic Soricelli</title>
+  <meta name="description" content="Network rack rebuild projects with before and after photos.">
+  <link rel="icon" href="images/keybird.gif">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="images/keybird.gif" alt="">Dominic</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="goals.html">Goals</a></li>
+          <li><a href="Accomplishments.html">Accomplishments</a></li>
+          <li><a href="Projects.html" aria-current="page">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://dsoricelli.github.io/mywebsite/index.html">Home</a>
-  <a href="https://dsoricelli.github.io/mywebsite/goals.html">Goals</a>
-  <a href="https://dsoricelli.github.io/mywebsite/Accomplishments.html">Accomplishments</a>
-  <a href="https://dsoricelli.github.io/mywebsite/Projects.html">Projects</a>
-  <a href="#">Coming Soon!</a>
-</div>
+  <main>
+    <div class="container">
+      <header class="page-title">
+        <p class="eyebrow">Hands-on work</p>
+        <h1>Projects</h1>
+        <p class="lead">Network clean-ups and rebuilds. Click any photo to enlarge it.</p>
+      </header>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <article class="project">
+        <h2>Single switch: off the ground and into a rack</h2>
+        <p>A lone switch sitting on the floor with tangled patch cables, moved into a wall-mount rack with a patch panel and cable management.</p>
+        <div class="compare">
+          <figure class="photo"><img src="images/switch-before.jpg" alt="Network switch on the floor with tangled cables" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure class="photo after"><img src="images/switch-after.jpg" alt="Wall-mounted rack with patch panel and neatly routed cables" loading="lazy"><figcaption>After</figcaption></figure>
+        </div>
+      </article>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+      <article class="project">
+        <h2>Main network: closet rack with dual UPS and NVR</h2>
+        <p>Equipment scattered across a desk, consolidated into a closet rack with dual battery backups and a network video recorder for the cameras.</p>
+        <div class="compare">
+          <figure class="photo"><img src="images/closet-before-1.jpg" alt="Switch and access points piled on a desk with loose cables" loading="lazy"><figcaption>Before</figcaption></figure>
+          <figure class="photo"><img src="images/closet-before-2.jpg" alt="Office with network gear spread across the desk" loading="lazy"><figcaption>Before</figcaption></figure>
+        </div>
+        <div class="compare" style="grid-template-columns:1fr">
+          <figure class="photo after" style="max-width:420px;margin:0 auto"><img src="images/closet-after.jpg" alt="Closet rack with patch panels, dual APC UPS units and an NVR monitor" style="aspect-ratio:3/4" loading="lazy"><figcaption>After</figcaption></figure>
+        </div>
+      </article>
+    </div>
+  </main>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span data-year>2026</span> Dominic Soricelli</span>
+      <a href="https://github.com/dsoricelli">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
-<!-- End Sidebar -->
-<body>
-<h1>Network Project</h1>
-            <h2>Single Switch - Off the Ground Rack</h2>
-            <img src="Before(2).JPG" alt="Before(2)" width="500" height="333">
-            <img src="After(2).JPG" alt="After(2)" width="500" height="333">
-<h2>Main Network - Closet Rack w/dual UPS and NVR</h2>
-            <img src="Before(1).JPG" alt="Before(1)" width="500" height="333">
-            <img src="Before(3).jpg" alt="Before(3)" width="500" height="333">
-           <br> <img src="After(1).jpg" alt="After(1)" width="333" height="500"></br>
-</body>
-    </html>
+</html>
